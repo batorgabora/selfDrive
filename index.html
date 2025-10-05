@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drive.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="carCanvas"></canvas>
+    <div id="verticalButtons">
+        <button class="tooltip" data-tooltip="save best car" onclick="save()">💾</button>
+        <button class="tooltip" data-tooltip="discard best car" onclick="discard()">🗑️</button>
+        <hr>
+        <button class="tooltip" data-tooltip="increase lane count" id="laneplus" onclick="lanesplus()">+</button>
+        <button class="tooltip" data-tooltip="decrease lane count" id="laneminus" onclick="lanesminus()">-</button>
+        <hr>
+        <button class="tooltip" data-tooltip="increase traffic counter" id="trafficplus" onclick="trafficplus()">+</button>
+        <button class="tooltip" data-tooltip="decrease traffic counter" id="trafficminus" onclick="trafficminus()">-</button>
+        <hr>
+        <button class="tooltip" data-tooltip="increase mutation rate" id="mutationplus" onclick="mutationplus()">+</button>
+        <button class="tooltip" data-tooltip="decrease mutation rate" id="mutationminus" onclick="mutationminus()">-</button>
+        <hr>
+        <button class="tooltip" data-tooltip="increase sensor ray count" id="sensorcountplus" onclick="sensorcountplus()">+</button>
+        <button class="tooltip" data-tooltip="decrease sensor ray count" id="sensorcountminus" onclick="sensorcountminus()">-</button>
+        <hr>
+        <button class="tooltip" data-tooltip="increase sensor spread" id="sensorspreadplus" onclick="sensorspreadplus()">+</button>
+        <button class="tooltip" data-tooltip="decrease sensor spread" id="sensorspreadminus" onclick="sensorspreadminus()">-</button>
+        <hr>
+        <button class="tooltip" data-tooltip="increase hidden layer neuron count" id="hiddenplus" onclick="hiddenplus()">+</button>
+        <button class="tooltip" data-tooltip="decrease hidden layer neuron count" id="hiddenminus" onclick="hiddenminus()">-</button>
+        <hr>
+        <button class="tooltip" data-tooltip="increase ai car num" id="aiplus" onclick="aiplus()">+</button>
+        <button class="tooltip" data-tooltip="decrease ai car num" id="aiminus" onclick="aiminus()">-</button>
+    </div>
+    <div id="extras">
+        <p id="laneWrite">lanes: <span id="laneCount">?</span></p>
+        <p id="aiWrite">ai cars: <span id="aiCars">?</span></p>
+        <p id="trafficWrite">traffic: <span id="trafficCount">?</span></p>
+        <p id="mutationWrite">rate of mutation: <span id="mutationRate">?</span></p>
+        <p id="raycountWrite">sensor rays: <span id="sensorCount">?</span></p>
+        <p id="rayspreadWrite">spread of rays: <span id="sensorSpread">?</span></p>
+        <hr>
+        <p id="hiddenlayerWrite">hidden neurons: <span id="hiddenLayer">?</span></p>
+        <p id="inputWrite">input neurons: <span id="inputLayer">?</span></p>
+    </div>
+    <canvas id="networkCanvas"></canvas>
+    <script src="traffic.js"></script>
+    <script src="display.js"></script>
+    <script src="visualizer.js"></script>
+    <script src="network.js"></script>
+    <script src="sensor.js"></script>
+    <script src="road.js"></script>
+    <script src="utils.js"></script>
+    <script src="controls.js"></script>
+    <script src="car.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

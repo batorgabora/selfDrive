@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    background: black;
+    overflow: hidden;           /*no scrollbar*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#verticalButtons{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px 7px 5px;
+    margin: 2px;
+    cursor:pointer;
+}
+
+/* Unique hover colors */
+#verticalButtons button:nth-child(1):hover { background: #4CAF50; } /* Save */
+#verticalButtons button:nth-child(2):hover { background: #4CAF50; } /* Discard */
+#verticalButtons button:nth-child(4):hover { background: #2196F3; } /* Lane+ */
+#verticalButtons button:nth-child(5):hover { background: #2196F3; } /* Lane- */
+#verticalButtons button:nth-child(7):hover { background: #4A27C9; } /* Mutation+ */
+#verticalButtons button:nth-child(8):hover { background: #4A27C9 } /* Mutation- */
+#verticalButtons button:nth-child(10):hover { background: #df4646; } /* Traffic+ */
+#verticalButtons button:nth-child(11):hover { background: #df4646; } /* Traffic- */
+#verticalButtons button:nth-child(13):hover { background: #105d02; } /* SensorCount+ */
+#verticalButtons button:nth-child(14):hover { background: #105d02; } /* SensorCount- */
+#verticalButtons button:nth-child(16):hover { background: #c1801f; } /* SensorSpread+ */
+#verticalButtons button:nth-child(17):hover { background: #c1801f; } /* SensorSpread- */
+#verticalButtons button:nth-child(19):hover { background: #6cddcc; } /* Hidden Layer Neurons+ */
+#verticalButtons button:nth-child(20):hover { background: #6cddcc;  } /* Hidden Layer Neurons- */
+#verticalButtons button:nth-child(22):hover { background: #7c46d9; } /* ai+ */
+#verticalButtons button:nth-child(23):hover { background: #7c46d9 } /* ai- */
+
+#verticalButtons hr {
+    height: 3px;
+    border: none;
+    background: linear-gradient(to right, red, blue);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: rgb(42, 40, 40);
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    white-space: nowrap;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+}
+
+#carCanvas{
+    background: lightgray;
+}
+
+#networkCanvas{
+    background: black;
+}
+
+#extras {
+    font-family: "Arial";
+    font-size: 15px; /* Adjust size if needed */
+    color: white; /* Ensure visibility */
+    position: absolute;
+    top: 5px;   /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
+    padding: 2px 2px;
+    border-radius: 2px;
+    text-align: right;
+}
+
+hr{
+    width: 10px;
+}
