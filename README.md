@@ -1,4 +1,4 @@
-# selDrive
+# selfDrive
 this is a js and html project, following <a href="https://youtube.com/playlist?list=PLB0Tybl0UNfYoJE7ZwsBQoDIG4YN9ptyY&si=HxeXSpk8B4t9GKn_">this tutorial</a>
 and later expanding on it through trial and error
 <img width="1027" height="811" alt="Screenshot 2025-10-06 at 8 29 55" src="https://github.com/user-attachments/assets/746c144a-89e9-4747-8a68-1dbf436ae376" />
