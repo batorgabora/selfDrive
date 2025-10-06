@@ -1,4 +1,5 @@
 # selfDrive
+<img width="836" height="530" alt="neaural" src="https://github.com/user-attachments/assets/483936f5-9775-4222-8367-86033fe0f70a" />
 
 I made this JavaScript and HTML project while following <a href="https://youtube.com/playlist?list=PLB0Tybl0UNfYoJE7ZwsBQoDIG4YN9ptyY&si=HxeXSpk8B4t9GKn_" target="_blank" rel="noopener noreferrer">this tutorial</a>, 
                     later expanding it through trial, error, and research. <br>
