@@ -72,7 +72,7 @@ button{
 }
 
 #carCanvas{
-    background: lightgray;
+    background: #323537;
 }
 
 #networkCanvas{
@@ -94,4 +94,40 @@ button{
 
 hr{
     width: 10px;
+}
+
+
+@media (max-width: 400px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: auto;
+  }
+
+  #carCanvas, #networkCanvas {
+    width: 90vw;
+    max-width: 400px;
+    height: auto;
+  }
+
+  #verticalButtons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px;
+    order: 3;
+  }
+
+  #verticalButtons button {
+    margin: 4px;
+    font-size: 14px;
+  }
+
+  #extras {
+    position: static;
+    text-align: center;
+    background: none;
+    margin-top: 10px;
+  }
 }
